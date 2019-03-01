@@ -1,0 +1,50 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "mongo": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "func-names": ["error", "never"],
+    "curly": ["error", "multi-line"],
+    "no-trailing-spaces": "warn",
+    "prefer-const": "warn",
+    "prefer-destructuring": "warn",
+    "no-var": "warn",
+    "no-underscore-dangle": "warn",
+    "import/no-dynamic-require": "off",
+    "prefer-template": "warn",
+    "prefer-arrow-callback": "warn",
+    "vars-on-top": "warn",
+    "no-unused-vars": "error",
+    "no-undefined": "error",
+    "semi": ["warn", "always"],
+    "no-param-reassign": "warn",
+    "consistent-return": "warn",
+    "one-var": "warn",
+    "comma-dangle": "warn",
+    "global-require": "warn",
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 1,
+        "maxEOF": 0,
+        "maxBOF": 0
+      }
+    ],
+    "no-use-before-define": [
+      2,
+      {
+        "functions": false
+      }
+    ],
+    "complexity": [1, 7],
+    "arrow-body-style": "warn"
+  }
+}
