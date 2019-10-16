@@ -20,11 +20,12 @@ const middlewares = require("./middlewares");
 /**
  * Returns a common helpers and library.
  * @param {string} applicationName - Name of the application.
+ * * @param {string} logDir - location of Log Directory.
  * @returns {Common} object with Common properties
  */
 
-function common(applicationName) {
-  const logger = lib.logger(applicationName);
+function common(applicationName, logDir) {
+  const logger = lib.logger(applicationName, logDir);
   return {
     logger,
     middlewares

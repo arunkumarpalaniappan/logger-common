@@ -6,7 +6,7 @@ Ready to use logger using morgan and winston.
 
 `npm i node-common`
 
-`const common = require("node-common")(SERVICE_NAME);`
+`const common = require("node-common")(SERVICE_NAME, LOG_DIR);`
 
 `const obj = {`
 
